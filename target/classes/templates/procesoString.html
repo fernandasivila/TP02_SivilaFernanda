@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Formulario</title>
+</head>
+<body>
+
+<h1>Ingreso</h1>
+<form method="post" th:action="@{/mostrarString}" th:object="${stringNuevo}">
+<label for="id_cadena">Cadena: </label><br>
+<input type="text" id="id_cadena" th:field="*{cadena}" required><br>
+
+<input type="submit" value="Procesar">
+</form>
+
+</body>
+</html>

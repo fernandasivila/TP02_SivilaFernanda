@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+
+<title>Formulario</title>
+</head>
+
+<body>
+ <h1>Comparación de fechas</h1>
+ 
+ <form method="post" th:object="${fechaNueva}" th:action="@{/mostrarFecha}">
+ 
+ <label for="id_f1">Fecha 1: </label><br>
+ <input type="date" id="id_f1" th:field="*{fecha1}" required><br>
+ <label for="id_f2">Fecha 2: </label><br>
+ <input type="date" id="id_f2" th:field="*{fecha2}" required><br>
+ 
+ <input type="submit" value="Comparar">
+ 
+ </form>
+
+
+</body>
+</html>

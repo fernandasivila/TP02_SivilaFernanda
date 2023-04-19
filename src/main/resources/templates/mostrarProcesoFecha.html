@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Fecha</title>
+
+</head>
+<body>
+
+<h1>Resultados</h1>
+
+ <form th:object="${fechaNueva}">
+ <label for="id_f1">Fecha 1: </label><br>
+ <input type="text" id="id_f1" th:field="*{fecha1}" disabled><br>
+ <label for="id_f2">Fecha 2: </label><br>
+ <input type="text" id="id_f2" th:field="*{fecha2}" disabled><br>
+ <label for="id_m1">Mensaje 1: </label><br>
+ <input type="text" id="id_m1" th:field="*{mensaje1}" size="40" disabled><br>
+ <label for="id_m2">Mensaje 2: </label><br>
+ <input type="text" id="id_m2" th:field="*{mensaje2}" size="80" disabled><br>
+ </form>
+
+</body>
+</html>

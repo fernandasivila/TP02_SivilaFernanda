@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Listado de personas</title>
+</head>
+<body>
+
+<h1> Persona ingresada:</h1>
+
+<form th:object="${personaNueva}">
+
+<label for="Id_nombre">Nombre: </label><br>
+<input type="text" id="Id_nombre" th:field="*{nombre}" disabled><br>
+<label for="Id_apellido">Apellido: </label><br>
+<input type="text" id="Id_apellido" th:field="*{apellido}" disabled><br>
+<label for="Id_fechaNacimiento">Fecha de Nacimiento: </label><br>
+<input type="text" id="Id_fechaNacimiento" th:field="*{fechaNacimiento}" disabled><br>
+<label for="id_edad">Edad: </label><br>
+<input type="text" id="id_edad" th:field="*{edad}" disabled><br>
+<label for="id_estacion">Estación del año en la que nació: </label><br>
+<input type="text" id="id_estacion" th:field="*{estacionNacida}" disabled><br>
+<label for="id_signo">Signo Zodiacal: </label><br>
+<input type="text" id="id_signo" th:field="*{signoZodiacal}" disabled><br>
+
+</form>
+
+</body>
+</html>

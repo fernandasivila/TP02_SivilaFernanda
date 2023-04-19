@@ -1,0 +1,72 @@
+package ar.edu.unju.edm.model;
+
+import java.time.LocalDate;
+
+public class Persona {
+	
+	private String nombre;
+	private String apellido;
+	private LocalDate fechaNacimiento;
+	private Integer edad;
+	private String estacionNacida;
+	private String signoZodiacal;
+	
+	public Persona() {
+	}
+
+	public Persona(String nombre, String apellido, LocalDate fechaNacimiento) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.fechaNacimiento = fechaNacimiento;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public LocalDate getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+
+	public void setFechaNacimiento(LocalDate fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+	}
+
+	public Integer getEdad() {
+		return edad;
+	}
+
+	public void setEdad(Integer edad) {
+		this.edad = edad;
+	}
+
+	public String getEstacionNacida() {
+		return estacionNacida;
+	}
+
+	public void setEstacionNacida(String estacionNacida) {
+		this.estacionNacida = estacionNacida;
+	}
+
+	public String getSignoZodiacal() {
+		return signoZodiacal;
+	}
+
+	public void setSignoZodiacal(String signoZodiacal) {
+		this.signoZodiacal = signoZodiacal;
+	}
+	
+}
